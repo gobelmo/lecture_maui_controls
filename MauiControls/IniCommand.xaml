@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.IniCommand"
+             Title="IniCommand">
+    <VerticalStackLayout>
+        <Button Text="Button 1" Clicked="Button_Clicked" ></Button>
+        <ImageButton Source="dotnet_bot.png" Clicked="ImageButton_Clicked"></ImageButton>
+        <Label Text="Selected grade :"></Label>
+        <RadioButton Value="A" Content="A" CheckedChanged="RadioButton_CheckedChanged"></RadioButton>
+        <RadioButton Value="B" Content="B" CheckedChanged="RadioButton_CheckedChanged"></RadioButton>
+        <RadioButton Value="C" Content="C" CheckedChanged="RadioButton_CheckedChanged"></RadioButton>
+        <RadioButton Value="D" Content="D" CheckedChanged="RadioButton_CheckedChanged"></RadioButton>
+        <RadioButton Value="F" Content="F" CheckedChanged="RadioButton_CheckedChanged"></RadioButton>
+        <Label x:Name="SelectedGradeLabel" Text="Grade"></Label>
+    </VerticalStackLayout>
+</ContentPage>
